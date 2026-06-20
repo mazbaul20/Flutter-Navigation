@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screen/home_screen.dart';
+import 'screen/login_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: const HomeScreen(),
+      home: const LoginScreen(),
     );
   }
 }
