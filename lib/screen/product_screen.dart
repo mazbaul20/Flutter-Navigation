@@ -19,10 +19,11 @@ class ProductScreen extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => SettingScreen(pageName: 'Welcome to Setting Screen',)),
-                );
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(builder: (_) => SettingScreen(pageName: 'Welcome to Setting Screen',)),
+                // );
+                Navigator.pushNamed(context, '/setting', arguments: 'Welcome to Setting Screen');
               },
               child: Text("Goto Setting Screen"),
             ),

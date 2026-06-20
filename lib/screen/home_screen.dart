@@ -23,10 +23,11 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => ProductScreen()),
-                );
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(builder: (_) => ProductScreen()),
+                // );
+                Navigator.pushNamed(context, '/product');
               },
               child: Text("Enter Product Screen"),
             ),
