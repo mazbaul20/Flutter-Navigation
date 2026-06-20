@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SettingScreen extends StatefulWidget {
-  final String pageName;
+  final String? pageName;
   const SettingScreen({super.key, required this.pageName});
 
   @override
@@ -18,7 +18,7 @@ class _SettingScreenState extends State<SettingScreen> {
         foregroundColor: Colors.white,
       ),
       body: Center(
-        child: Text(widget.pageName),
+        child: Text(widget.pageName??"pageName"),
       ),
     );
   }
